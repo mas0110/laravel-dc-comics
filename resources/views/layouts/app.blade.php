@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 
 <head>
     <meta charset="UTF-8">
@@ -13,12 +13,12 @@
 </head>
 
 <body>
-    <header>
-        @include('components.header')
-    </header>
+    {{-- <header> --}}
+        {{-- @include('components.header') --}}
+    {{-- </header> --}}
 
     <main>
-        @yield('main_content')
+        @yield('main')
     </main>
 </body>
 
