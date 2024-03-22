@@ -9,7 +9,18 @@
 
 
 
-## ordine di creazione file
+## Ordine creazione dei file 
+
+1. migration
+2. modello
+3. seeder
+4. controller
+5. rotte
+6. CRUD
+
+
+
+## ordine di creazione nello specifico
 
 creare una tabella e popolare i dati
 1. migration
