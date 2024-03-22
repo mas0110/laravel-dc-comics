@@ -67,7 +67,7 @@
                 <div class="mb-3">
                     <label for="cooking_time" class="form-label">sale date</label>
                     <input
-                        type="text"
+                        type="date"
                         class="form-control"
                         name="sale_date"
                         id="sale_date"

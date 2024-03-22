@@ -14,7 +14,9 @@
                 <div class="card bg-light text-dark" style="width: 18rem; min-height: 670px">
                     <img src="{{$item->thumb}}" class="card-img-top" alt="">
                     <div class="card-body">
-                        <h5 class="card-title">{{$item->title}}</h5>
+                        <h5 class="card-title">
+                            <a href="{{ route('comics.show',$item->id) }}">{{$item->title}}</a>
+                        </h5>
                         {{-- <p class="card-text"> --}}
                             {{-- {{$item->description}} --}}
                         {{-- </p> --}}
