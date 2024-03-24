@@ -26,6 +26,24 @@
                             <span><strong>Sala date:</strong> {{$item->sale_date}}</span>
                             <span><strong>Type:</strong> {{$item->type}}</span>
                         </div>
+                        <div class="d-flex justify-content-center gap-3 mt-3">
+                            <a href="{{ route('comics.edit', $item->id) }}" class="btn btn-primary">
+                                edit
+                            </a>
+
+                            <form action="{{ route( 'comics.destroy', $item->id ) }}" method="POST">
+
+                                @csrf
+                                @method('DELETE')
+
+                                <button
+                                    type="submit"
+                                    class="btn btn-danger">
+                                    delete
+                                </button>
+                            </form>
+
+                        </div>
                     </div>
                 </div>
             </div>
